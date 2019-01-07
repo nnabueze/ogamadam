@@ -262,3 +262,69 @@ New Log Entry:
 {"TransactionId":"1234566789","TransactionDate":"2018/12/23","Amount":"20000","PaymentCategory":"Payment of employee","PaymentStatus":"Successful","PaymentChannel":"Web","EmployeeId":"c7cbaa59-1bfb-484a-9e23-fd077196527e","EmployerId":"cf1dd186-d4ad-4536-9c31-9dd0ca62d997","EndDate":"2019/1/30","StartDate":"2018/12/30"}
 __________________________
  
+
+New Log Entry: 
+1/7/2019 11:08:46 AM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"0098776","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 12:22:04 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"0098776","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 12:40:17 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 12:44:33 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 12:52:31 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 12:58:13 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 1:08:26 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"12345678978","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 1:32:43 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 1:37:03 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 2:03:44 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"988940","QualificationType":"Bsc"}}
+__________________________
+ 
+
+New Log Entry: 
+1/7/2019 2:11:53 PM
+{"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"96529978801","QualificationType":"Bsc"}}
+__________________________
+ 

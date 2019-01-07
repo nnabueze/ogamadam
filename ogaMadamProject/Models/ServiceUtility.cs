@@ -1,12 +1,16 @@
 ﻿using AutoMapper;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Newtonsoft.Json;
 using ogaMadamProject.Controllers;
 using ogaMadamProject.Dtos;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Helpers;
@@ -20,7 +24,11 @@ namespace ogaMadamProject.Models
         private ApplicationDbContext _db;
         private OgaMadamAdo _db2;
         private Ado1 _db3;
-       
+
+        private string confirmMeUrl = "https://confirmme.com/CustomerAPI2";
+        private static string confirmMeClientId = "471";
+        private string confirmMeClientKey = "6a1f757b6f039ac0c46db53f6d29b4c72751be2b2c36a7dcd50fd495f8864e8e";
+      
 
 
         public ServiceUtility()
@@ -50,7 +58,79 @@ namespace ogaMadamProject.Models
 
         public bool VerifyBVN(string bvn)
         {
+            var hashString = GetHashString(bvn);
+            var hashToken = GenerateSHA256String(hashString);
+            var url = confirmMeUrl + "/BVNText?bvn=" + bvn;
+            var verifyResponse = confirmMeWebCall(url, hashToken, "GET");
+            ConfirmMeBVNResponse results = JsonConvert.DeserializeObject<ConfirmMeBVNResponse>(verifyResponse);
+            if (results.ResponseCode.Equals("00"))
+            {
+                return true;
+            }
             return false;
+        }
+
+        public bool VerifyNIMC(string nimc)
+        {
+            var hashString = GetHashString(nimc);
+            var hashToken = GenerateSHA256String(hashString);
+            var url = confirmMeUrl + "/verifyNin?regNo=" + nimc;
+            var verifyResponse = confirmMeWebCall(url, hashToken, "GET");
+            ConfirmMeNINResponse results = JsonConvert.DeserializeObject<ConfirmMeNINResponse>(verifyResponse);
+            if (results.ResponseCode.Equals("00"))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static string confirmMeWebCall(string url, string hashToken, string method, bool isParam = false, string param = null)
+        {
+            string strResponseValue = string.Empty;
+
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = method;
+                request.Headers.Add("CLIENTID", confirmMeClientId);
+                request.Headers.Add("HASHTOKEN", hashToken);
+                if (isParam)
+                {
+                    request.ContentType = "application/x-www-form-urlencoded";
+                    byte[] postData = Encoding.UTF8.GetBytes(param);
+                    request.ContentLength = postData.Length;
+                    Stream dataStream = request.GetRequestStream();
+                    dataStream.Write(postData, 0, postData.Length);
+                    dataStream.Close();
+                }
+
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                {
+                    if (response.StatusCode != HttpStatusCode.OK)
+                    {
+                        return strResponseValue;
+                    }
+
+                    using (Stream responseStream = response.GetResponseStream())
+                    {
+                        if (responseStream != null)
+                        {
+                            using (StreamReader reader = new StreamReader(responseStream))
+                            {
+                                strResponseValue = reader.ReadToEnd();
+                            }
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return strResponseValue;
+            }
+
+            return strResponseValue;
         }
 
         public Task<bool> RegisterEmployee(RegisterModel model, string id)
@@ -615,6 +695,31 @@ namespace ogaMadamProject.Models
             }
             return userList;
 
+        }
+
+        public static string GenerateSHA256String(string inputString)
+        {
+            SHA256 sha256 = SHA256.Create();
+            byte[] bytes = Encoding.UTF8.GetBytes(inputString);
+            byte[] hash = sha256.ComputeHash(bytes);
+            return GetStringFromHash(hash);
+        }
+
+        private string GetHashString(string hashString)
+        {
+            var hashTokenString = confirmMeClientId + confirmMeClientKey + hashString;
+
+            return hashTokenString;
+        }
+
+        private static string GetStringFromHash(byte[] hash)
+        {
+            StringBuilder result = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                result.Append(hash[i].ToString("X2"));
+            }
+            return result.ToString();
         }
 
         protected virtual void Dispose(bool disposing)

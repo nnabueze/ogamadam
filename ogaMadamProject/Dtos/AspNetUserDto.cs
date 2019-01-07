@@ -177,4 +177,40 @@ namespace ogaMadamProject.Dtos
         public string StartDate { get; set; }
         public string EndDate { get; set; }
     }
+
+    public class ConfirmMeBVNResponse
+    {
+        public string ResponseCode { get; set; }
+        public string Parameter { get; set; }
+        public string Source { get; set; }
+        public string Message { get; set; }
+        public string Timestamp { get; set; }
+        public string ResponseNIMC { get; set; }
+        public ResponseBVNDetails ResponseBVNDetails { get; set; }
+        public string ResponseBVNImage { get; set; }
+    }
+
+    public class ResponseBVNDetails
+    {
+        public string BVN { get; set; }
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
+        public string LastName { get; set; }
+        public string RegistrationDate { get; set; }
+        public string DateOfBirth { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Gender { get; set; }
+    }
+
+    public class ConfirmMeNINResponse
+    {
+        public string ResponseCode { get; set; }
+        public string Parameter { get; set; }
+        public string Source { get; set; }
+        public string Message { get; set; }
+        public string Timestamp { get; set; }
+        public string ResponseNIMC { get; set; }
+        public string ResponseBVNDetails { get; set; }
+        public string ResponseBVNImage { get; set; }
+    }
 }

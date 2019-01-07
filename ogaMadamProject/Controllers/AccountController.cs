@@ -424,18 +424,20 @@ namespace ogaMadamProject.Controllers
             };
 
             //verifiy user BVN
+            var isNimcVerify = util.VerifyNIMC(model.ExtraData.NIMC);
             var isBvnVerify = util.VerifyBVN(model.ExtraData.BVN);
-            //if (! isBvnVerify)
-            //{
-            //    var error = new ErorrMessage()
-            //    {
-            //        ResponseCode = 403,
-            //        ResponseStatus = false,
-            //        Message = "Invalid bvn | please contact your bank"
-            //    };
+            
+            if (!isBvnVerify || !isNimcVerify)
+            {
+                var error = new ErorrMessage()
+                {
+                    ResponseCode = 403,
+                    ResponseStatus = false,
+                    Message = "Invalid BVN or NIN | please contact your bank"
+                };
 
-            //    return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
-            //}
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
+            }
 
             IdentityResult result = await UserManager.CreateAsync(user, DefaultPassword);
 
