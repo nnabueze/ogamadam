@@ -28,6 +28,13 @@ namespace ogaMadamProject.Models
         private string confirmMeUrl = "https://confirmme.com/CustomerAPI2";
         private static string confirmMeClientId = "471";
         private string confirmMeClientKey = "6a1f757b6f039ac0c46db53f6d29b4c72751be2b2c36a7dcd50fd495f8864e8e";
+
+        private string emailUrl = "https://api.elasticemail.com/v2/email/send";
+        private string emailApiKey = "ecd98fde-5d02-45f8-857e-c6cf1c09129f";
+
+        private string smsUrl = "http://www.estoresms.com/smsapi.php";
+        private string smsUsername = "CHAMS";
+        private string smsPassword = "welcome40@";
       
 
 
@@ -208,11 +215,23 @@ namespace ogaMadamProject.Models
                 if (! string.IsNullOrEmpty(dataRequest.RecieptEmail))
                 {
                     //send email
+                    string url = emailUrl+"?apikey="+ emailApiKey +"&subject="+dataRequest.Subject+"&from="
+                        +dataRequest.SenderEmail+"&fromName=Oga Madam&sender="
+                        +dataRequest.SenderEmail+"&senderName=Oga Madam Team&replyTo="
+                        +dataRequest.SenderEmail+"&to="
+                        +dataRequest.RecieptEmail+"&bodyHtml="+dataRequest.Message;
+
+                    var emailResponse = SmsEmailWebCall(url);
                 }
 
                 if (!string.IsNullOrEmpty(dataRequest.Phone))
                 {
                     //send sms
+                    string url = smsUrl + "?username="+ smsUsername + "&password="+ smsPassword 
+                        + "&sender=Oga Madam&recipient="
+                        +dataRequest.Phone+"&message="+dataRequest.Message+"&dnd=true";
+
+                    var smsResponse = SmsEmailWebCall(url);
 
                 }
             }
@@ -222,6 +241,44 @@ namespace ogaMadamProject.Models
                 throw;
             }
             return null;
+        }
+
+        public static string SmsEmailWebCall(string url)
+        {
+            string strResponseValue = string.Empty;
+
+            try
+            {
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "GET";
+
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                {
+                    if (response.StatusCode != HttpStatusCode.OK)
+                    {
+                        return strResponseValue;
+                    }
+
+                    using (Stream responseStream = response.GetResponseStream())
+                    {
+                        if (responseStream != null)
+                        {
+                            using (StreamReader reader = new StreamReader(responseStream))
+                            {
+                                strResponseValue = reader.ReadToEnd();
+                            }
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return strResponseValue;
+            }
+
+            return strResponseValue;
         }
 
         public string RandomNumber()

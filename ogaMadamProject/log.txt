@@ -328,3 +328,9 @@ New Log Entry:
 {"Email":"admin6@yahoo.com","FirstName":"work4","LastName":"work4","MiddleName":"hitester","PlaceOfBirth":"Abuja","DateOfBirth":"2018/10/05","Address":"wuse","StateOfOrigin":"fct","PhoneNumber":"0803457746","Sex":"Female","ExtraData":{"BVN":"22170380179","NIMC":"96529978801","QualificationType":"Bsc"}}
 __________________________
  
+
+New Log Entry: 
+1/7/2019 3:19:40 PM
+{"From":"Oga Madam","RecieptEmail":"villavelle101@gmail.com","SenderEmail":"villavelle101@gmail.com","Subject":"developing Oga Madama","Message":"Testing Oga Madam Project","Phone":"08035400839"}
+__________________________
+ 
