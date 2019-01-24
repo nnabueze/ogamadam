@@ -334,3 +334,15 @@ New Log Entry:
 {"From":"Oga Madam","RecieptEmail":"villavelle101@gmail.com","SenderEmail":"villavelle101@gmail.com","Subject":"developing Oga Madama","Message":"Testing Oga Madam Project","Phone":"08035400839"}
 __________________________
  
+
+New Log Entry: 
+1/23/2019 5:20:33 PM
+{"From":"Oga Madam","RecieptEmail":"villavelle101@gmail.com","SenderEmail":"villavelle101@gmail.com","Subject":"developing Oga Madama","Message":"Testing Oga Madam Project","Phone":"08035400839"}
+__________________________
+ 
+
+New Log Entry: 
+1/23/2019 11:48:24 PM
+{"From":"Oga Madam","RecieptEmail":"villavelle101@gmail.com","SenderEmail":"villavelle101@gmail.com","Subject":"developing Oga Madama","Message":"Testing Oga Madam Project","Phone":"08035400839"}
+__________________________
+ 

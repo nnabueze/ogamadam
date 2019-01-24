@@ -14,7 +14,7 @@ using System.Web.Http;
 
 namespace ogaMadamProject.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [RoutePrefix("api/Service")]
     public class ServiceController : ApiController
     {
