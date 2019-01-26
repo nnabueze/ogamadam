@@ -19,9 +19,11 @@ using ogaMadamProject.Results;
 using System.Net;
 using Newtonsoft.Json;
 using System.Linq;
+using System.Web.Http.Cors;
 
 namespace ogaMadamProject.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
@@ -327,7 +329,7 @@ namespace ogaMadamProject.Controllers
         }
 
         // POST api/Account/Register
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {

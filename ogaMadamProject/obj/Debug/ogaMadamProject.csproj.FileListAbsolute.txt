@@ -125,3 +125,6 @@ C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProje
 C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\obj\Debug\ogaMadamProject.Migrations.GuarantorTicketCommentAndBillerseting.resources
 C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\obj\Debug\ogaMadamProject.Migrations.CreateAspNetUserRole.resources
 C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\obj\Debug\ogaMadamProject.Migrations.ModifiedSalaryWithTransaction.resources
+C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\bin\System.Web.Cors.dll
+C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\bin\System.Web.Http.Cors.dll
+C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\bin\System.Web.Http.Cors.xml

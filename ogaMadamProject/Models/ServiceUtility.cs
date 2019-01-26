@@ -243,6 +243,57 @@ namespace ogaMadamProject.Models
             return null;
         }
 
+        public IList<EmployeeResponseModel> SearchWorkers(SearchWorkerDto requestParam)
+        {
+            IList<EmployeeResponseModel> employeeList = new List<EmployeeResponseModel>();
+            var category = _db2.Categories.Where(o => o.Title == requestParam.Category).FirstOrDefault();
+            if (category == null)
+            {
+                var workList = _db2.Employees.Where(o => o.IsUserVerified == true).ToList();
+                foreach (var item in workList)
+                {
+                    employeeList.Add(getWorker(item));
+                }
+
+            }
+            else
+            {
+                foreach (var item in category.Employee)
+                {
+                    employeeList.Add(getWorker(item));
+                }
+            }
+            return employeeList;
+        }
+
+        private EmployeeResponseModel getWorker(Employee item)
+        {
+            var worker = new EmployeeResponseModel()
+            {
+                EmployeeId = item.EmployeeId,
+                Address = item.AspNetUser.Address,
+                Email = item.AspNetUser.Email,
+                FirstName = item.AspNetUser.FirstName,
+                LastName = item.AspNetUser.LastName,
+                MiddleName = item.AspNetUser.MiddleName,
+                Phone = item.AspNetUser.PhoneNumber,
+                PlaceOfBirth = item.AspNetUser.PlaceOfBirth,
+                StateOfOrigin = item.AspNetUser.StateOfOrigin
+
+            };
+
+            if (item.AspNetUser.Sex == SexType.Female)
+            {
+                worker.Sex = "Female";
+            }
+            else
+            {
+                worker.Sex = "Male";
+            }
+
+            return worker;
+        }
+
         public static string SmsEmailWebCall(string url)
         {
             string strResponseValue = string.Empty;
@@ -296,65 +347,66 @@ namespace ogaMadamProject.Models
             var manager = new UserManager<ApplicationUser>(userStore);
 
             var result = manager.Find(requestParam.Email, requestParam.Password);
-            var employeeData = _db2.Employees.FirstOrDefault(o=>o.EmployeeId == result.Id);
-            var uploadInfo = _db2.Uploads.Where(o => o.UploadId == result.Id).ToList();
 
 
             //check if user login successfully
-            if (result == null)
+            if (result != null)
             {
-                return res;
-            }
-            var roleId = _db3.AspNetUserRoles.FirstOrDefault(o => o.UserId == result.Id);
-            var role = _db2.AspNetRoles.FirstOrDefault(o => o.Id == roleId.RoleId);
+                var employeeData = _db2.Employees.FirstOrDefault(o => o.EmployeeId == result.Id);
+                var uploadInfo = _db2.Uploads.Where(o => o.UploadId == result.Id).ToList();
 
-            IList<UploadDto> uploadDtos = new List<UploadDto>();
-            foreach (var item in uploadInfo)
-            {
-                var uploadId = new UploadDto()
+                var roleId = _db3.AspNetUserRoles.FirstOrDefault(o => o.UserId == result.Id);
+                var role = _db2.AspNetRoles.FirstOrDefault(o => o.Id == roleId.RoleId);
+
+                IList<UploadDto> uploadDtos = new List<UploadDto>();
+                foreach (var item in uploadInfo)
                 {
-                    UploadId = item.UploadId
+                    var uploadId = new UploadDto()
+                    {
+                        UploadId = item.UploadId
+                    };
+                    uploadDtos.Add(uploadId);
+                }
+
+                //check if account is activated
+                if (result.AccountStatus == StatusType.Pending)
+                {
+                    res.Data = "pending";
+                    return res;
+                }
+
+                var user = new EmployeeLoginDto()
+                {
+                    Address = result.Address,
+                    DateOfBirth = result.DateOfBirth,
+                    Email = result.Email,
+                    FirstName = result.FirstName,
+                    LastName = result.LastName,
+                    MiddleName = result.MiddleName,
+                    Password = requestParam.Password,
+                    PhoneNumber = result.PhoneNumber,
+                    PlaceOfBirth = result.PlaceOfBirth,
+                    StateOfOrigin = result.StateOfOrigin,
+
                 };
-                uploadDtos.Add(uploadId);
+                user.Upload = uploadDtos;
+                if (employeeData != null)
+                {
+                    user.BVN = employeeData.BVN;
+                    user.NIMC = employeeData.NIMC;
+                }
+                if (result.Sex == SexType.Male)
+                {
+                    user.Sex = "Male";
+                }
+                else
+                {
+                    user.Sex = "Female";
+                }
+
+                res.Data = user;
             }
 
-            //check if account is activated
-            if (result.AccountStatus == StatusType.Pending)
-            {
-                res.Data = "pending";
-                return res;
-            }
-
-            var user = new EmployeeLoginDto()
-            {
-                Address = result.Address,
-                DateOfBirth = result.DateOfBirth,
-                Email = result.Email,
-                FirstName = result.FirstName,
-                LastName = result.LastName,
-                MiddleName = result.MiddleName,
-                Password = requestParam.Password,
-                PhoneNumber = result.PhoneNumber,
-                PlaceOfBirth = result.PlaceOfBirth,
-                StateOfOrigin = result.StateOfOrigin,
-                
-            };
-            user.Upload = uploadDtos;
-            if (employeeData != null)
-            {
-                user.BVN = employeeData.BVN;
-                user.NIMC = employeeData.NIMC;
-            }
-            if (result.Sex == SexType.Male)
-            {
-                user.Sex = "Male";
-            }
-            else
-            {
-                user.Sex = "Female";
-            }
-
-            res.Data = user;
             return res;
             
         }

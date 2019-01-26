@@ -168,6 +168,13 @@ namespace ogaMadamProject.Dtos
         public string StartDate { get; set; }
     }
 
+    public class SearchWorkerDto
+    {
+        [Required]
+        public string Category { get; set; }
+        public string Location { get; set; }
+    }
+
     public class SalaryDto
     {
         public string SalaryId { get; set; }

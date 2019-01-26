@@ -11,10 +11,12 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace ogaMadamProject.Controllers
 {
-    //[Authorize]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
+    [Authorize]
     [RoutePrefix("api/Service")]
     public class ServiceController : ApiController
     {
@@ -153,6 +155,22 @@ namespace ogaMadamProject.Controllers
                 var json = JsonConvert.SerializeObject(requestParam);
                 log(json);
 
+                if (!ModelState.IsValid)
+                {
+                    var message = string.Join(" | ", ModelState.Values
+                                    .SelectMany(v => v.Errors)
+                                    .Select(e => e.ErrorMessage));
+
+                    var error = new ErorrMessage()
+                    {
+                        ResponseCode = 403,
+                        ResponseStatus = false,
+                        Message = message
+                    };
+
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
+                }
+
                 var transactionResponse = util.PayTransaction(requestParam);
                 if (! transactionResponse)
                 {
@@ -166,6 +184,45 @@ namespace ogaMadamProject.Controllers
                 return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
             }
         }
+
+        [HttpPost]
+        public IHttpActionResult SearchWorkers(SearchWorkerDto requestParam)
+        {
+            try
+            {
+                var json = JsonConvert.SerializeObject(requestParam);
+                log(json);
+
+                if (!ModelState.IsValid)
+                {
+                    var message = string.Join(" | ", ModelState.Values
+                                    .SelectMany(v => v.Errors)
+                                    .Select(e => e.ErrorMessage));
+
+                    var error = new ErorrMessage()
+                    {
+                        ResponseCode = 403,
+                        ResponseStatus = false,
+                        Message = message
+                    };
+
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
+                }
+
+                var transactionResponse = util.SearchWorkers(requestParam);
+                if (transactionResponse.Count() == 0)
+                {
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "Unable to capture record")));
+                }
+
+                return Ok(SuccessResponse(200, "successful", transactionResponse));
+            }
+            catch (Exception ex)
+            {
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
+            }
+        }
+
 
         [HttpGet]
         public IHttpActionResult ListVerifyEmployee()
