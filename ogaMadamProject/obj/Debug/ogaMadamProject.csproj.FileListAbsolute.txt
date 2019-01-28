@@ -128,3 +128,5 @@ C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProje
 C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\bin\System.Web.Cors.dll
 C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\bin\System.Web.Http.Cors.dll
 C:\Users\Eze\Documents\Visual Studio 2017\Projects\ogaMadamProject\ogaMadamProject\bin\System.Web.Http.Cors.xml
+C:\Users\Eze\documents\visual studio 2017\Projects\ogaMadamProject\ogaMadamProject\obj\Debug\ogaMadamProject.Migrations.AlterTableemployeeCategory.resources
+C:\Users\Eze\documents\visual studio 2017\Projects\ogaMadamProject\ogaMadamProject\obj\Debug\ogaMadamProject.Migrations.AlterEmployeeAddObjective.resources

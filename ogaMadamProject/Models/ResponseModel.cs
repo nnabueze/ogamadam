@@ -58,5 +58,7 @@ namespace ogaMadamProject.Models
         public string StateOfOrigin { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
+        public string CategoryName { get; set; }
+        public string Objective { get; set; }
     }
 }

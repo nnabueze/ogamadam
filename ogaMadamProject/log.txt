@@ -1222,3 +1222,165 @@ New Log Entry:
 {"Category":"cook","Location":"abuja"}
 __________________________
  
+
+New Log Entry: 
+1/26/2019 7:27:28 PM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/26/2019 7:48:00 PM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/26/2019 7:49:15 PM
+{"Category":"cookshhs","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 2:41:44 AM
+{"Category":"cookshhs","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 2:47:50 AM
+{"Category":null,"Location":null}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 2:50:53 AM
+{"Category":null,"Location":null}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 2:52:11 AM
+{"Category":null,"Location":null}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 2:52:53 AM
+{"Category":null,"Location":null}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 2:53:24 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:00:59 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:02:09 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:05:42 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:08:31 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:19:04 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:23:47 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:24:26 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:34:16 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:36:56 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:37:52 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:41:18 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:42:16 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:44:42 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:54:44 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 3:58:30 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 6:05:00 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 6:05:39 AM
+{"Category":"cookshhs","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/27/2019 6:08:20 AM
+{"Category":"cook","Location":"uuu"}
+__________________________
+ 

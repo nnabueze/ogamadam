@@ -245,53 +245,57 @@ namespace ogaMadamProject.Models
 
         public IList<EmployeeResponseModel> SearchWorkers(SearchWorkerDto requestParam)
         {
-            IList<EmployeeResponseModel> employeeList = new List<EmployeeResponseModel>();
+            
             var category = _db2.Categories.Where(o => o.Title == requestParam.Category).FirstOrDefault();
             if (category == null)
             {
-                var workList = _db2.Employees.Where(o => o.IsUserVerified == true).ToList();
-                foreach (var item in workList)
-                {
-                    employeeList.Add(getWorker(item));
-                }
-
+                var item = _db2.Employees.Where(o => o.IsUserVerified == true).ToList();
+                return getWorker(item);
             }
             else
             {
-                foreach (var item in category.Employee)
-                {
-                    employeeList.Add(getWorker(item));
-                }
+                var item = _db2.Employees.Where(o => o.CategoryId == category.CategoryId &&
+                                        o.IsUserVerified == true).ToList();
+                return getWorker(item);
             }
-            return employeeList;
         }
 
-        private EmployeeResponseModel getWorker(Employee item)
+        private IList<EmployeeResponseModel> getWorker(IEnumerable<Employee> itemx)
         {
-            var worker = new EmployeeResponseModel()
-            {
-                EmployeeId = item.EmployeeId,
-                Address = item.AspNetUser.Address,
-                Email = item.AspNetUser.Email,
-                FirstName = item.AspNetUser.FirstName,
-                LastName = item.AspNetUser.LastName,
-                MiddleName = item.AspNetUser.MiddleName,
-                Phone = item.AspNetUser.PhoneNumber,
-                PlaceOfBirth = item.AspNetUser.PlaceOfBirth,
-                StateOfOrigin = item.AspNetUser.StateOfOrigin
+            IList<EmployeeResponseModel> employeeList = new List<EmployeeResponseModel>();
 
-            };
-
-            if (item.AspNetUser.Sex == SexType.Female)
+            foreach (var item in itemx)
             {
-                worker.Sex = "Female";
+                var worker = new EmployeeResponseModel()
+                {
+                    EmployeeId = item.EmployeeId,
+                    Address = item.AspNetUser.Address,
+                    Email = item.AspNetUser.Email,
+                    FirstName = item.AspNetUser.FirstName,
+                    LastName = item.AspNetUser.LastName,
+                    MiddleName = item.AspNetUser.MiddleName,
+                    Phone = item.AspNetUser.PhoneNumber,
+                    PlaceOfBirth = item.AspNetUser.PlaceOfBirth,
+                    StateOfOrigin = item.AspNetUser.StateOfOrigin,
+                    CategoryName = item.Category.Title,
+                    Objective = item.Objective 
+
+                };
+
+                if (item.AspNetUser.Sex == SexType.Female)
+                {
+                    worker.Sex = "Female";
+                }
+                else
+                {
+                    worker.Sex = "Male";
+                }
+
+                employeeList.Add(worker);
+
             }
-            else
-            {
-                worker.Sex = "Male";
-            }
 
-            return worker;
+            return employeeList;
         }
 
         public static string SmsEmailWebCall(string url)

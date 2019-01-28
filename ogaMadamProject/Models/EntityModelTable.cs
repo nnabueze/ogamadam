@@ -29,6 +29,7 @@ namespace ogaMadamProject.Models
         public string EmployeeId { get; set; }
         public string EmployerId { get; set; }
         public string CategoryId { get; set; }
+        public string Objective { get; set; }
         public string BVN { get; set; }
         public string NIMC { get; set; }
         public bool IsAttachedApproved { get; set; }
@@ -223,6 +224,7 @@ namespace ogaMadamProject.Models
     public class Category
     {
         [Key]
+        [ForeignKey("Employee")]
         public string CategoryId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }

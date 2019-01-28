@@ -325,6 +325,14 @@
     <Compile Include="Migrations\201812270336206_ModifiedSalaryWithTransaction.Designer.cs">
       <DependentUpon>201812270336206_ModifiedSalaryWithTransaction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901261825413_AlterTableemployeeCategory.cs" />
+    <Compile Include="Migrations\201901261825413_AlterTableemployeeCategory.Designer.cs">
+      <DependentUpon>201901261825413_AlterTableemployeeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201901270445333_AlterEmployeeAddObjective.cs" />
+    <Compile Include="Migrations\201901270445333_AlterEmployeeAddObjective.Designer.cs">
+      <DependentUpon>201901270445333_AlterEmployeeAddObjective.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -487,6 +495,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812270336206_ModifiedSalaryWithTransaction.resx">
       <DependentUpon>201812270336206_ModifiedSalaryWithTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901261825413_AlterTableemployeeCategory.resx">
+      <DependentUpon>201901261825413_AlterTableemployeeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901270445333_AlterEmployeeAddObjective.resx">
+      <DependentUpon>201901270445333_AlterEmployeeAddObjective.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
