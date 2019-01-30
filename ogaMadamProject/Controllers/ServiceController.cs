@@ -42,11 +42,11 @@ namespace ogaMadamProject.Controllers
         }
 
         [HttpGet]
-        public async Task<IHttpActionResult> ListCategory()
+        public IHttpActionResult ListCategory()
         {
             try
             {
-                var CategoryList = await util.ListCategory();
+                var CategoryList = util.ListCategory();
                 if (CategoryList.Count() == 0)
                 {
                     return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "No Category found")));
@@ -56,6 +56,7 @@ namespace ogaMadamProject.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message.ToString());
                 return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
             }
         }
@@ -210,6 +211,28 @@ namespace ogaMadamProject.Controllers
                 }
 
                 var transactionResponse = util.SearchWorkers(requestParam);
+                if (transactionResponse.Count() == 0)
+                {
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "Unable to capture record")));
+                }
+
+                return Ok(SuccessResponse(200, "successful", transactionResponse));
+            }
+            catch (Exception ex)
+            {
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
+            }
+        }
+
+
+
+        [HttpGet]
+        public IHttpActionResult ListSixWorkers()
+        {
+            try
+            {
+
+                var transactionResponse = util.ListSixWorkers();
                 if (transactionResponse.Count() == 0)
                 {
                     return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "Unable to capture record")));

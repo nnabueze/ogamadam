@@ -54,13 +54,25 @@ namespace ogaMadamProject.Models
             });
         }
 
-        public Task<IEnumerable<CategoryDto>> ListCategory()
+        public IList<CategoryDto> ListCategory()
         {
-            return Task.Run(() =>
+            IList<CategoryDto> listCategory = new List<CategoryDto>();
+            var categories =  _db2.Categories.ToList();
+            foreach (var item in categories)
             {
-                System.Threading.Thread.Sleep(1000);
-                return _db2.Categories.ToList().Select(Mapper.Map<Category, CategoryDto>);
-            });
+                var num = _db2.Employees.Where(o => o.CategoryId == item.CategoryId && o.IsUserVerified==true).Count();
+                var cat = new CategoryDto()
+                {
+                    CategoryId = item.CategoryId,
+                    Description = item.Description,
+                    Title = item.Title,
+                    numberOfWorkers = num
+                };
+
+                listCategory.Add(cat);
+            }
+
+            return listCategory;
         }
 
         public bool VerifyBVN(string bvn)
@@ -241,6 +253,12 @@ namespace ogaMadamProject.Models
                 throw;
             }
             return null;
+        }
+
+        public IList<EmployeeResponseModel> ListSixWorkers()
+        {
+            var item = _db2.Employees.Where(o => o.IsTrained == true).Take(6).ToList();
+            return getWorker(item);
         }
 
         public IList<EmployeeResponseModel> SearchWorkers(SearchWorkerDto requestParam)

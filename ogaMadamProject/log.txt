@@ -1384,3 +1384,51 @@ New Log Entry:
 {"Category":"cook","Location":"uuu"}
 __________________________
  
+
+New Log Entry: 
+1/29/2019 1:44:46 AM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/29/2019 1:58:44 AM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/29/2019 1:59:53 AM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/29/2019 2:01:10 AM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/29/2019 2:32:41 AM
+{"Category":"cook","Location":"ok"}
+__________________________
+ 
+
+New Log Entry: 
+1/29/2019 2:34:44 AM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/29/2019 7:12:10 AM
+{"Category":"cook","Location":"abuja"}
+__________________________
+ 
+
+New Log Entry: 
+1/29/2019 7:14:05 AM
+{"Category":"cook","Location":"yobe"}
+__________________________
+ 
