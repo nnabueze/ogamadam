@@ -801,6 +801,73 @@ namespace ogaMadamProject.Models
             return transDtoList;
         }
 
+        public IEnumerable<EmployerDTO> EmployeeByEmployer(TransByEmployerDTO requestParam)
+        {
+            IList<EmployerDTO> transDtoList = new List<EmployerDTO>();
+            var employees = _db2.Employees.Where(o => o.EmployerId == requestParam.EmployerId).ToList();
+            foreach (var item in employees)
+            {
+                var transDto = new EmployerDTO()
+                {
+                  AccountName = item.AccountName,
+                  AccountNumber = item.AccountNumber,
+                  Address = item.AspNetUser.Address,
+                  AttachedDate = item.AttachedDate,
+                  BankName = item.BankName,
+                  BVN = item.BVN,
+                  CategoryId = item.CategoryId,
+                  DateOfBirth = item.AspNetUser.DateOfBirth,
+                  Email = item.AspNetUser.Email,
+                  FirstName = item.AspNetUser.FirstName,
+                  Id = item.EmployeeId,
+                  LastName = item.AspNetUser.LastName,
+                  MiddleName = item.AspNetUser.MiddleName,
+                  NIMC = item.NIMC,
+                  PhoneNumber = item.AspNetUser.PhoneNumber,
+                  PlaceOfBirth = item.AspNetUser.PlaceOfBirth,
+                  SalaryAmount = item.SalaryAmount,
+                  StateOfOrigin = item.AspNetUser.StateOfOrigin 
+                };
+
+                switch (item.AspNetUser.Sex)
+                {
+                    case SexType.Female:
+                        transDto.Sex = "Female";
+                        break;
+                    case SexType.Male:
+                        transDto.Sex = "Male";
+                        break;
+                    default:
+                        break;
+                }
+
+                switch (item.QualificationType)
+                {
+                    case QualificationType.Bsc:
+                        transDto.QualificationType = "Bsc";
+                        break;
+                    case QualificationType.Hnd:
+                        transDto.QualificationType = "Hnd";
+                        break;
+                    case QualificationType.Msc:
+                        transDto.QualificationType = "Msc";
+                        break;
+                    case QualificationType.Ond:
+                        transDto.QualificationType = "Ond";
+                        break;
+                    case QualificationType.Ssce:
+                        transDto.QualificationType = "Ssce";
+                        break;
+                    default:
+                        break;
+                }
+
+
+                transDtoList.Add(transDto);
+            }
+            return transDtoList;
+        }
+
         private string getUserName(string id)
         {
             var user = _db2.AspNetUsers.FirstOrDefault(o=>o.Id == id);

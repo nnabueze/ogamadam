@@ -157,6 +157,54 @@ namespace ogaMadamProject.Dtos
         public IList<UploadDto> Upload { get; set; }
     }
 
+    public class EmployerDTO
+    {       
+        public string Email { get; set; }
+
+        public string Password { get; set; }
+
+        public string PhoneNumber { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string MiddleName { get; set; }
+
+        public string PlaceOfBirth { get; set; }
+
+        public DateTime? DateOfBirth { get; set; }
+
+        public string Address { get; set; }
+
+        public string Sex { get; set; }
+
+        public string StateOfOrigin { get; set; }
+
+        public string BVN { get; set; }
+
+        public string NIMC { get; set; }
+
+        public string Id { get; set; }
+
+        public IList<UploadDto> Upload { get; set; }
+
+        public string CategoryId { get; set; }
+
+        public DateTime? AttachedDate { get; set; }
+
+        public string BankName { get; set; }
+
+        public string AccountName { get; set; }
+
+        public string AccountNumber { get; set; }
+
+        public decimal SalaryAmount { get; set; }
+        
+        public string QualificationType { get; set; }
+
+    }
+
     public class EmployerLoginDto
     {
         [Required]
