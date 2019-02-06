@@ -140,6 +140,46 @@ namespace ogaMadamProject.Dtos
 
         public string NIMC { get; set; }
 
+        public string PlaceOfWork { get; set; }
+
+        public string NextOfKin { get; set; }
+
+        public string NextOfKinPhoneNumber { get; set; }
+
+        public string NextOfKinAddress { get; set; }
+
+        public string Profession { get; set; }
+
+        public string Role { get; set; }
+
+        public string Id { get; set; }
+
+        public IList<UploadDto> Upload { get; set; }
+    }
+
+    public class EmployerLoginDto
+    {
+        [Required]
+        public string Email { get; set; }
+
+        public string PhoneNumber { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string MiddleName { get; set; }
+
+        public string PlaceOfBirth { get; set; }
+
+        public DateTime? DateOfBirth { get; set; }
+
+        public string Address { get; set; }
+
+        public string Sex { get; set; }
+
+        public string StateOfOrigin { get; set; }
+
         public IList<UploadDto> Upload { get; set; }
     }
 

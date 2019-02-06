@@ -407,23 +407,44 @@ namespace ogaMadamProject.Controllers
             {
                 sex = SexType.Female;
             }
-
-            var user = new ApplicationUser()
+            else
             {
-                UserName = model.Email,
-                Email = model.Email,
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                Address = model.Address,
-                DateOfBirth = Convert.ToDateTime(model.DateOfBirth),
-                PlaceOfBirth = model.PlaceOfBirth,
-                MiddleName = model.MiddleName,
-                PhoneNumber = model.PhoneNumber,
-                StateOfOrigin = model.StateOfOrigin,
-                CreatedAt = DateTime.Now,
-                Sex = sex,
-                UserType = UserType.Employee
-            };
+                sex = SexType.Male;
+            }
+
+            ApplicationUser user = new ApplicationUser();
+            user.UserName = model.Email;
+            user.Email = model.Email;
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
+            user.Address = model.Address;
+            user.DateOfBirth = Convert.ToDateTime(model.DateOfBirth);
+            user.PlaceOfBirth = model.PlaceOfBirth;
+            user.MiddleName = model.MiddleName;
+            user.PhoneNumber = model.PhoneNumber;
+            user.StateOfOrigin = model.StateOfOrigin;
+            user.CreatedAt = DateTime.Now;
+            user.Sex = sex;
+            user.UserType = UserType.Employee;
+
+            //var user = new ApplicationUser()
+            //{
+            //    UserName = model.Email,
+            //    Email = model.Email,
+            //    FirstName = model.FirstName,
+            //    LastName = model.LastName,
+            //    Address = model.Address,
+            //    DateOfBirth = Convert.ToDateTime(model.DateOfBirth),
+            //    PlaceOfBirth = model.PlaceOfBirth,
+            //    MiddleName = model.MiddleName,
+            //    PhoneNumber = model.PhoneNumber,
+            //    StateOfOrigin = model.StateOfOrigin,
+            //    CreatedAt = DateTime.Now,
+            //    Sex = sex,
+            //    UserType = UserType.Employee
+            //};
+
+            //upload file
 
             //verifiy user BVN
             var isNimcVerify = util.VerifyNIMC(model.ExtraData.NIMC);

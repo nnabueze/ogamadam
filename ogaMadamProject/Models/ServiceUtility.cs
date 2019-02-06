@@ -370,67 +370,148 @@ namespace ogaMadamProject.Models
 
             var result = manager.Find(requestParam.Email, requestParam.Password);
 
+            if (result == null)
+            {
+                return res;
+            }
+
 
             //check if user login successfully
-            if (result != null)
+            if (result.UserType == UserType.Employee)
             {
-                var employeeData = _db2.Employees.FirstOrDefault(o => o.EmployeeId == result.Id);
-                var uploadInfo = _db2.Uploads.Where(o => o.UploadId == result.Id).ToList();
+                res = GetEmployeeDetails(result, requestParam);
+            }
 
-                var roleId = _db3.AspNetUserRoles.FirstOrDefault(o => o.UserId == result.Id);
-                var role = _db2.AspNetRoles.FirstOrDefault(o => o.Id == roleId.RoleId);
-
-                IList<UploadDto> uploadDtos = new List<UploadDto>();
-                foreach (var item in uploadInfo)
-                {
-                    var uploadId = new UploadDto()
-                    {
-                        UploadId = item.UploadId
-                    };
-                    uploadDtos.Add(uploadId);
-                }
-
-                //check if account is activated
-                if (result.AccountStatus == StatusType.Pending)
-                {
-                    res.Data = "pending";
-                    return res;
-                }
-
-                var user = new EmployeeLoginDto()
-                {
-                    Address = result.Address,
-                    DateOfBirth = result.DateOfBirth,
-                    Email = result.Email,
-                    FirstName = result.FirstName,
-                    LastName = result.LastName,
-                    MiddleName = result.MiddleName,
-                    Password = requestParam.Password,
-                    PhoneNumber = result.PhoneNumber,
-                    PlaceOfBirth = result.PlaceOfBirth,
-                    StateOfOrigin = result.StateOfOrigin,
-
-                };
-                user.Upload = uploadDtos;
-                if (employeeData != null)
-                {
-                    user.BVN = employeeData.BVN;
-                    user.NIMC = employeeData.NIMC;
-                }
-                if (result.Sex == SexType.Male)
-                {
-                    user.Sex = "Male";
-                }
-                else
-                {
-                    user.Sex = "Female";
-                }
-
-                res.Data = user;
+            if (result.UserType == UserType.Employer)
+            {
+                res = GetEmployerDetails(result, requestParam);
             }
 
             return res;
             
+        }
+
+        public ResponseModel GetEmployeeDetails(ApplicationUser result, EmployeeLoginDto requestParam)
+        {
+            ResponseModel res = new ResponseModel();
+
+            var employeeData = _db2.Employees.FirstOrDefault(o => o.EmployeeId == result.Id);
+            var uploadInfo = _db2.Uploads.Where(o => o.UploadId == result.Id).ToList();
+
+            var roleId = _db3.AspNetUserRoles.FirstOrDefault(o => o.UserId == result.Id);
+            var role = _db2.AspNetRoles.FirstOrDefault(o => o.Id == roleId.RoleId);
+
+            IList<UploadDto> uploadDtos = new List<UploadDto>();
+            foreach (var item in uploadInfo)
+            {
+                var uploadId = new UploadDto()
+                {
+                    UploadId = item.UploadId
+                };
+                uploadDtos.Add(uploadId);
+            }
+
+            //check if account is activated
+            if (result.AccountStatus == StatusType.Pending)
+            {
+                res.Data = "pending";
+                return res;
+            }
+
+            var user = new EmployeeLoginDto()
+            {
+                Address = result.Address,
+                DateOfBirth = result.DateOfBirth,
+                Email = result.Email,
+                FirstName = result.FirstName,
+                LastName = result.LastName,
+                MiddleName = result.MiddleName,
+                Password = requestParam.Password,
+                PhoneNumber = result.PhoneNumber,
+                PlaceOfBirth = result.PlaceOfBirth,
+                StateOfOrigin = result.StateOfOrigin,
+                Role = role.Name
+
+            };
+            user.Upload = uploadDtos;
+            if (employeeData != null)
+            {
+                user.BVN = employeeData.BVN;
+                user.NIMC = employeeData.NIMC;
+            }
+            if (result.Sex == SexType.Male)
+            {
+                user.Sex = "Male";
+            }
+            else
+            {
+                user.Sex = "Female";
+            }
+
+            res.Data = user;
+            return res;
+        }
+
+        public ResponseModel GetEmployerDetails(ApplicationUser result, EmployeeLoginDto requestParam)
+        {
+            ResponseModel res = new ResponseModel();
+
+            var employeeData = _db2.Employers.FirstOrDefault(o => o.EmployerId == result.Id);
+            var uploadInfo = _db2.Uploads.Where(o => o.UploadId == result.Id).ToList();
+
+            var roleId = _db3.AspNetUserRoles.FirstOrDefault(o => o.UserId == result.Id);
+            var role = _db2.AspNetRoles.FirstOrDefault(o => o.Id == roleId.RoleId);
+
+            IList<UploadDto> uploadDtos = new List<UploadDto>();
+            foreach (var item in uploadInfo)
+            {
+                var uploadId = new UploadDto()
+                {
+                    UploadId = item.UploadId
+                };
+                uploadDtos.Add(uploadId);
+            }
+
+            //check if account is activated
+            if (result.AccountStatus == StatusType.Pending)
+            {
+                res.Data = "pending";
+                return res;
+            }
+
+            var user = new EmployeeLoginDto()
+            {
+                Address = result.Address,
+                DateOfBirth = result.DateOfBirth,
+                Email = result.Email,
+                FirstName = result.FirstName,
+                LastName = result.LastName,
+                MiddleName = result.MiddleName,
+                Password = requestParam.Password,
+                PhoneNumber = result.PhoneNumber,
+                PlaceOfBirth = result.PlaceOfBirth,
+                StateOfOrigin = result.StateOfOrigin,
+                NextOfKin = employeeData.NextOfKin,
+                NextOfKinAddress = employeeData.NextOfKinAddress,
+                NextOfKinPhoneNumber = employeeData.NextOfKinPhoneNumber,
+                PlaceOfWork = employeeData.PlaceOfWork,
+                Profession = employeeData.Profession,
+                Role = role.Name,
+                Id = employeeData.EmployerId 
+
+            };
+            user.Upload = uploadDtos;
+            if (result.Sex == SexType.Male)
+            {
+                user.Sex = "Male";
+            }
+            else
+            {
+                user.Sex = "Female";
+            }
+
+            res.Data = user;
+            return res;
         }
 
         public bool PayTransaction(TransactionDto requestParam)
@@ -495,6 +576,34 @@ namespace ogaMadamProject.Models
                 return true;
             }
             return false;
+
+        }
+
+        public void UploadImage(HttpFileCollectionBase files)
+        {
+            try
+            {
+                foreach (string file in files)
+                {
+                    var fileContent = files[file];
+                    if (fileContent != null && fileContent.ContentLength > 0)
+                    {
+                        // get a stream
+                        var stream = fileContent.InputStream;
+                        // and optionally write the file to disk
+                        var fileName = Path.GetFileName(file);
+                        var path = Path.Combine(HttpContext.Current.Server.MapPath("~/content/images"), fileName);
+                        using (var fileStream = File.Create(path))
+                        {
+                            stream.CopyTo(fileStream);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+            }
 
         }
 
