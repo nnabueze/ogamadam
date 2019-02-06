@@ -2194,3 +2194,171 @@ New Log Entry:
 {"Email":"test@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
 __________________________
  
+
+New Log Entry: 
+2/6/2019 8:57:30 AM
+{"EmployerId":"cf1dd186-d4ad-4536-9c31-9dd0ca62d997"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:04:30 AM
+{"Email":"villavelle101@yahoo.com","Password":"thfhtr","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:05:14 AM
+{"Email":"villavelle101@yahoo.com","Password":"cddd","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:06:48 AM
+{"Email":"test@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:07:07 AM
+{"EmployerId":null}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:07:17 AM
+{"EmployerId":null}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:08:20 AM
+{"EmployerId":null}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:08:23 AM
+{"EmployerId":null}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:09:11 AM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:09:22 AM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 9:13:57 AM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:30:53 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:31:32 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:32:35 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:34:00 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:35:25 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:36:33 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:36:52 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:38:02 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:40:00 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:40:24 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:41:19 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:48:34 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:50:04 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:50:42 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:51:12 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:52:48 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/6/2019 12:53:37 PM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 

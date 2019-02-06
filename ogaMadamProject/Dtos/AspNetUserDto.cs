@@ -217,6 +217,12 @@ namespace ogaMadamProject.Dtos
         public string Location { get; set; }
     }
 
+    public class TransByEmployerDTO
+    {
+        [Required]
+        public string EmployerId { get; set; }
+    }
+
     public class SalaryDto
     {
         public string SalaryId { get; set; }

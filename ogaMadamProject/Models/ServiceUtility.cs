@@ -748,6 +748,59 @@ namespace ogaMadamProject.Models
             return transDtoList;
         }
 
+        public IEnumerable<TransactionDto> TransactionByEmployer(TransByEmployerDTO requestParam)
+        {
+            IList<TransactionDto> transDtoList = new List<TransactionDto>();
+            var trans = _db2.Transactions.Where(o=>o.EmployerId == requestParam.EmployerId).ToList();
+            foreach (var item in trans)
+            {
+                var transDto = new TransactionDto()
+                {
+                    Amount = item.Amount.ToString(),
+                    EmployeeId = getUserName(item.Employee.EmployeeId),
+                    EmployerId = getUserName(item.Employer.EmployerId),
+                    EndDate = item.Salary.EndDate.ToString(),
+                    PaymentCategory = item.PaymentCategory,
+                    StartDate = item.Salary.StartDate.ToString(),
+                    TransactionDate = item.TransactionDate.ToString(),
+                    TransactionId = item.TransactionId
+                };
+
+                switch (item.PaymentChannel)
+                {
+                    case PaymentChannelType.Web:
+                        transDto.PaymentChannel = "Web";
+                        break;
+                    case PaymentChannelType.Pos:
+                        transDto.PaymentChannel = "Pos";
+                        break;
+                    case PaymentChannelType.Cash:
+                        transDto.PaymentChannel = "Cash";
+                        break;
+                    default:
+                        break;
+                }
+
+                switch (item.PaymentStatus)
+                {
+                    case PaymentStatus.Failed:
+                        transDto.PaymentStatus = "Failed";
+                        break;
+                    case PaymentStatus.Successful:
+                        transDto.PaymentStatus = "Successful";
+                        break;
+                    case PaymentStatus.pending:
+                        transDto.PaymentStatus = "pending";
+                        break;
+                    default:
+                        break;
+                }
+
+                transDtoList.Add(transDto);
+            }
+            return transDtoList;
+        }
+
         private string getUserName(string id)
         {
             var user = _db2.AspNetUsers.FirstOrDefault(o=>o.Id == id);
