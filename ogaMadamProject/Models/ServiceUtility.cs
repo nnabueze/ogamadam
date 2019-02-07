@@ -868,6 +868,44 @@ namespace ogaMadamProject.Models
             return transDtoList;
         }
 
+        public IEnumerable<TicketDto> TicketByEmployer(TransByEmployerDTO requestParam)
+        {
+            IList<TicketDto> transDtoList = new List<TicketDto>();
+            var employees = _db2.Tickets.Where(o => o.AspNetUserId == requestParam.EmployerId).ToList();
+            foreach (var item in employees)
+            {
+                var transDto = new TicketDto()
+                {
+                  Title = item.Title,
+                  Description = item.Description,
+                  CreatedAt = item.CreatedAt,
+                  TicketId = item.TicketId
+                };
+
+                transDtoList.Add(transDto);
+            }
+            return transDtoList;
+        }
+
+        public IEnumerable<NotificationDTO> NotificationByEmployer(TransByEmployerDTO requestParam)
+        {
+            IList<NotificationDTO> transDtoList = new List<NotificationDTO>();
+            var employees = _db2.Notifications.Where(o=>o.AspNetUserId == requestParam.EmployerId).ToList();
+            foreach (var item in employees)
+            {
+                var transDto = new NotificationDTO()
+                {
+                    CreatedBy  = item.CreatedBy,
+                    Description = item.Description,
+                    NotificationDate = item.NotificationDate,
+                    NotificationId = item.NotificationId
+                };
+
+                transDtoList.Add(transDto);
+            }
+            return transDtoList;
+        }
+
         private string getUserName(string id)
         {
             var user = _db2.AspNetUsers.FirstOrDefault(o=>o.Id == id);

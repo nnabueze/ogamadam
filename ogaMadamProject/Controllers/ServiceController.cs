@@ -384,6 +384,86 @@ namespace ogaMadamProject.Controllers
         }
 
 
+        [HttpPost]
+        public IHttpActionResult TicketByUser(TransByEmployerDTO requestParam)
+        {
+            try
+            {
+                var json = JsonConvert.SerializeObject(requestParam);
+                log(json);
+
+                if (!ModelState.IsValid)
+                {
+                    var message = string.Join(" | ", ModelState.Values
+                                    .SelectMany(v => v.Errors)
+                                    .Select(e => e.ErrorMessage));
+
+                    var error = new ErorrMessage()
+                    {
+                        ResponseCode = 403,
+                        ResponseStatus = false,
+                        Message = message
+                    };
+
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
+                }
+
+                var transactionResponse = util.TicketByEmployer(requestParam);
+                if (transactionResponse.Count() == 0)
+                {
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "Unable to capture record")));
+                }
+
+                return Ok(SuccessResponse(200, "successful", transactionResponse));
+            }
+            catch (Exception ex)
+            {
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
+            }
+        }
+
+
+        [HttpPost]
+        public IHttpActionResult NotificationByUser(TransByEmployerDTO requestParam)
+        {
+            //try
+            //{
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
+            //}
+
+            var json = JsonConvert.SerializeObject(requestParam);
+            log(json);
+
+            if (!ModelState.IsValid)
+            {
+                var message = string.Join(" | ", ModelState.Values
+                                .SelectMany(v => v.Errors)
+                                .Select(e => e.ErrorMessage));
+
+                var error = new ErorrMessage()
+                {
+                    ResponseCode = 403,
+                    ResponseStatus = false,
+                    Message = message
+                };
+
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
+            }
+
+            var transactionResponse = util.NotificationByEmployer(requestParam);
+            if (transactionResponse.Count() == 0)
+            {
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "Unable to capture record")));
+            }
+
+            return Ok(SuccessResponse(200, "successful", transactionResponse));
+        }
+
+
         [HttpGet]
         public IHttpActionResult AttachedEmployee(string EmployerId)
         {

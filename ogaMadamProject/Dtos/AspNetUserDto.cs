@@ -205,6 +205,22 @@ namespace ogaMadamProject.Dtos
 
     }
 
+    public class TicketDto
+    {
+        public string TicketId { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public DateTime CreatedAt { get; set; }
+    }
+
+    public class NotificationDTO
+    {
+        public string NotificationId { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime? NotificationDate { get; set; }
+        public string Description { get; set; }
+    }
+
     public class EmployerLoginDto
     {
         [Required]
