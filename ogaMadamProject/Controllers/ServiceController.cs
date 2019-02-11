@@ -426,41 +426,42 @@ namespace ogaMadamProject.Controllers
         [HttpPost]
         public IHttpActionResult NotificationByUser(TransByEmployerDTO requestParam)
         {
-            //try
-            //{
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
-            //}
-
-            var json = JsonConvert.SerializeObject(requestParam);
-            log(json);
-
-            if (!ModelState.IsValid)
+            try
             {
-                var message = string.Join(" | ", ModelState.Values
-                                .SelectMany(v => v.Errors)
-                                .Select(e => e.ErrorMessage));
+                var json = JsonConvert.SerializeObject(requestParam);
+                log(json);
 
-                var error = new ErorrMessage()
+                if (!ModelState.IsValid)
                 {
-                    ResponseCode = 403,
-                    ResponseStatus = false,
-                    Message = message
-                };
+                    var message = string.Join(" | ", ModelState.Values
+                                    .SelectMany(v => v.Errors)
+                                    .Select(e => e.ErrorMessage));
 
-                return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
+                    var error = new ErorrMessage()
+                    {
+                        ResponseCode = 403,
+                        ResponseStatus = false,
+                        Message = message
+                    };
+
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
+                }
+
+                var transactionResponse = util.NotificationByEmployer(requestParam);
+                if (transactionResponse.Count() == 0)
+                {
+                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "Unable to capture record")));
+                }
+
+                return Ok(SuccessResponse(200, "successful", transactionResponse));
+
             }
-
-            var transactionResponse = util.NotificationByEmployer(requestParam);
-            if (transactionResponse.Count() == 0)
+            catch (Exception ex)
             {
-                return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "Unable to capture record")));
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
             }
 
-            return Ok(SuccessResponse(200, "successful", transactionResponse));
+
         }
 
 

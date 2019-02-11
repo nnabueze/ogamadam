@@ -207,6 +207,31 @@ namespace ogaMadamProject.Models
             });
         }
 
+
+        public bool RegisterEmployer(Employer employerDetails, RegisterBindingModel model)
+        {
+
+            _db2.Employers.Add(employerDetails);
+            if (_db2.SaveChanges() == 1)
+            {
+                var content = new EmailSmsRequest()
+                {
+                    From = "Oga Madam",
+                    Message = "Email confirmation",
+                    RecieptEmail = model.Email,
+                    SenderEmail = model.Email,
+                    Subject = "Email confirmation"
+                };
+
+                SendEmailSms(content);
+
+                //send phone verification
+
+                return true;
+            }
+            return false;
+        }
+
         public bool VerifyEmail(string id, string hashParam)
         {
             var user = _db2.AspNetUsers.FirstOrDefault(o => o.Id == id);
@@ -876,11 +901,21 @@ namespace ogaMadamProject.Models
             {
                 var transDto = new TicketDto()
                 {
-                  Title = item.Title,
-                  Description = item.Description,
-                  CreatedAt = item.CreatedAt,
-                  TicketId = item.TicketId
+                    Title = item.Title,
+                    Description = item.Description,
+                    CreatedAt = item.CreatedAt,
+                    TicketId = item.TicketId,
+                    noOfComments = item.Comment.Count().ToString()
                 };
+
+                if (item.status == TicketStatus.Open)
+                {
+                    transDto.Status = "Open";
+                }
+                else
+                {
+                    transDto.Status = "Close";
+                }
 
                 transDtoList.Add(transDto);
             }

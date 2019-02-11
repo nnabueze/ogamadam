@@ -57,6 +57,11 @@ namespace ogaMadamProject.Models
         public string StateOfOrigin { get; set; }
         public string PhoneNumber { get; set; }
         public string Sex { get; set; }
+        public string PlaceOfWork { get; set; }
+        public string NextOfKin { get; set; }
+        public string NextOfKinPhone { get; set; }
+        public string NextOfKinAddress { get; set; }
+        public string Type { get; set; }
     }
 
     public class RegisterModel

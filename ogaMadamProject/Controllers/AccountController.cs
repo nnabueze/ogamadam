@@ -333,6 +333,7 @@ namespace ogaMadamProject.Controllers
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {
+            Console.WriteLine(model);
             SexType sex = 0;
             if (!ModelState.IsValid)
             {
@@ -342,6 +343,10 @@ namespace ogaMadamProject.Controllers
             if (model.Sex.Equals("Female"))
             {
                 sex = SexType.Female;
+            }
+            else
+            {
+                sex = SexType.Male;
             }
 
             var user = new ApplicationUser()
@@ -358,8 +363,12 @@ namespace ogaMadamProject.Controllers
                 StateOfOrigin = model.StateOfOrigin,
                 CreatedAt = DateTime.Now,
                 Sex = sex,
-                UserType = UserType.Admin
             };
+
+            if (model.Type.Equals("Employer"))
+            {
+                user.UserType = UserType.Employer;
+            }
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
@@ -367,6 +376,22 @@ namespace ogaMadamProject.Controllers
             {
                 return GetErrorResult(result);
             }
+
+            if (model.Type.Equals("Employer"))
+            {
+                var employer = new Employer()
+                {
+                  EmployerId = user.Id,
+                  NextOfKin = model.NextOfKin,
+                  NextOfKinAddress = model.NextOfKinAddress,
+                  NextOfKinPhoneNumber = model.NextOfKinPhone,
+                  PlaceOfWork = model.PlaceOfWork,
+                  CreatedAt = DateTime.Now
+                };
+
+                var employerDatails = util.RegisterEmployer(employer, model);
+            }
+
             var res = new UserReponseModel()
             {
                  ResponseCode = 201,
