@@ -337,7 +337,17 @@ namespace ogaMadamProject.Controllers
             SexType sex = 0;
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                var message = string.Join(" | ", ModelState.Values
+                                    .SelectMany(v => v.Errors)
+                                    .Select(e => e.ErrorMessage));
+
+                var error = new ErorrMessage()
+                {
+                    ResponseCode = 403,
+                    ResponseStatus = false,
+                    Message = message
+                };
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.Forbidden, error));
             }
 
             if (model.Sex.Equals("Female"))

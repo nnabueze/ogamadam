@@ -8086,3 +8086,33 @@ New Log Entry:
 {"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
 __________________________
  
+
+New Log Entry: 
+2/12/2019 11:36:03 AM
+{"Email":"test@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/12/2019 11:36:12 AM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/12/2019 11:36:12 AM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/12/2019 11:36:12 AM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
+
+New Log Entry: 
+2/12/2019 11:36:12 AM
+{"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
+__________________________
+ 
