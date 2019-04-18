@@ -16,7 +16,7 @@ using System.Web.Http.Cors;
 namespace ogaMadamProject.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    [Authorize]
+  
     [RoutePrefix("api/Service")]
     public class ServiceController : ApiController
     {
@@ -25,20 +25,22 @@ namespace ogaMadamProject.Controllers
         [HttpGet]
         public async Task<IHttpActionResult> ListUsers()
         {
-            try
-            {
-                var userList = await util.ListUsers();
-                if (userList.Count() == 0)
-                {
-                    return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "No user found")));
-                }
+            //try
+            //{
 
-                return Ok(SuccessResponse(200, "successful", userList));
-            }
-            catch (Exception ex)
+            //}
+            //catch (Exception ex)
+            //{
+            //    return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
+            //}
+
+            var userList = await util.ListUsers();
+            if (userList.Count() == 0)
             {
-                return ResponseMessage(Request.CreateResponse(HttpStatusCode.InternalServerError, ErrorResponse(500, ex.Message.ToString())));
+                return ResponseMessage(Request.CreateResponse(HttpStatusCode.NotFound, ErrorResponse(404, "No user found")));
             }
+
+            return Ok(SuccessResponse(200, "successful", userList));
         }
 
         [HttpGet]

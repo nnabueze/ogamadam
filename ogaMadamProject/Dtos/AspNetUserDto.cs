@@ -26,6 +26,7 @@ namespace ogaMadamProject.Dtos
         public bool IsEmailVerified { get; set; }
         public bool IsPhoneVerified { get; set; }
         public bool IsUserVerified { get; set; }
+        public string Role { get; set; }
     }
 
     public class EmployeeDto

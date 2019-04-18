@@ -412,8 +412,63 @@ namespace ogaMadamProject.Models
                 res = GetEmployerDetails(result, requestParam);
             }
 
+            if (result.UserType == UserType.Admin)
+            {
+                res = GetAdminUser(result);
+            }
+
             return res;
             
+        }
+
+        public ResponseModel GetAdminUser(ApplicationUser result)
+        {
+            var roleId = _db3.AspNetUserRoles.FirstOrDefault(o => o.UserId == result.Id);
+            var role = _db2.AspNetRoles.FirstOrDefault(o => o.Id == roleId.RoleId);
+
+            var res = new AspNetUserDto()
+            {
+                Address = result.Address,
+                DateOfBirth = result.DateOfBirth.ToString(),
+                Email = result.Email,
+                FirstName = result.FirstName,
+                Id = result.Id,
+                LastName = result.LastName,
+                MiddleName = result.MiddleName,
+                PhoneNumber = result.PhoneNumber,
+                PlaceOfBirth = result.PlaceOfBirth,
+                StateOfOrigin = result.StateOfOrigin,
+                Role = role.Name
+            };
+
+            if (result.Sex == SexType.Male)
+            {
+                res.Sex = "Male";
+            }
+            else
+            {
+                res.Sex = "Female";
+            }
+
+            if (result.UserType == UserType.Admin)
+            {
+                res.UserType = "Admin";
+            }
+            else if(result.UserType == UserType.Employee)
+            {
+                res.UserType = "Employee";
+            }
+            else
+            {
+                res.UserType = "Employer";
+            }
+
+            var response = new ResponseModel()
+            {
+                Data = res
+            };
+
+            return response;
         }
 
         public ResponseModel GetEmployeeDetails(ApplicationUser result, EmployeeLoginDto requestParam)

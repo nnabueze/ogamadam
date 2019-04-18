@@ -24,7 +24,7 @@ using System.Web.Http.Cors;
 namespace ogaMadamProject.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    [Authorize]
+   
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {

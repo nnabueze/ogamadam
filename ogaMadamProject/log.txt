@@ -8116,3 +8116,309 @@ New Log Entry:
 {"EmployerId":"f6c44a7e-0607-487b-a384-af88122b36f9"}
 __________________________
  
+
+New Log Entry: 
+2/18/2019 1:22:10 AM
+{"Email":"villavelle101@yahoo.com","Password":"dfss","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:27:45 AM
+{"Email":"test@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:55:05 AM
+{"Email":"admin2@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:57:55 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:00:03 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:04:18 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 11:12:07 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 11:20:55 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 11:22:22 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 11:24:03 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 11:25:46 AM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:00:40 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:05:30 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:07:40 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:09:09 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:13:00 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:18:57 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:22:48 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:26:06 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:30:17 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:31:52 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:33:41 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:40:32 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:43:36 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:44:39 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 1:45:33 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:30:37 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:31:28 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:31:52 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:32:38 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:33:25 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 2:34:48 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 4:45:57 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 4:49:08 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 4:51:33 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 5:02:32 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 5:02:54 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 5:03:47 PM
+{"Email":"villavelle101@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 5:05:48 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 5:10:57 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+2/18/2019 5:13:14 PM
+{"Email":"villxxx@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/16/2019 4:45:51 PM
+{"Email":"admin6@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/16/2019 4:47:12 PM
+{"Email":"admin6@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 4:59:53 AM
+{"Email":"admin6@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 5:31:15 AM
+{"Email":"admin6@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 5:31:46 AM
+{"Email":"admin6@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 5:34:01 AM
+{"Email":"admin@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 5:34:23 AM
+{"Email":"admin4@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 5:36:38 AM
+{"Email":"admin4@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 5:36:50 AM
+{"Email":"admin4@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
+
+New Log Entry: 
+3/17/2019 5:40:46 AM
+{"Email":"admin4@yahoo.com","Password":"1234567aD#","PhoneNumber":null,"FirstName":null,"LastName":null,"MiddleName":null,"PlaceOfBirth":null,"DateOfBirth":null,"Address":null,"Sex":null,"StateOfOrigin":null,"BVN":null,"NIMC":null,"PlaceOfWork":null,"NextOfKin":null,"NextOfKinPhoneNumber":null,"NextOfKinAddress":null,"Profession":null,"Role":null,"Id":null,"Upload":null}
+__________________________
+ 
